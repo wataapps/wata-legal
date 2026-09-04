@@ -5,26 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wata Support</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 80px; line-height: 1.55; color: #101820; }
-    h1 { font-size: 2rem; } h2 { margin-top: 1.6em; } p, li { color: #2a3440; }
+    :root { --thread:#D63A6A; --ledger:#1F6F73; --mist:#5c6b7a; --paper:#F4F7FB; --ink:#101820; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); line-height: 1.55; }
+    header { background: linear-gradient(180deg, #1A2738, #0B1018); color: #F4F7FB; padding: 36px 24px 28px; }
+    header .kicker { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #9AABBD; }
+    header h1 { margin: 8px 0 0; font-size: 2rem; }
+    header h1 span { color: var(--thread); }
+    .hero {
+      margin: 18px 0 0;
+      border-radius: 16px;
+      height: 140px;
+      background: #132033 url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=70") center/cover;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 28px 20px 80px; }
+    h2 { font-size: 1.15rem; margin-top: 1.6em; }
+    p, li { color: var(--mist); }
+    a { color: var(--ledger); }
   </style>
 </head>
 <body>
-  <h1>Support</h1>
-  <p>Operator: Wata. Last updated: 3 September 2026.</p>
-  <p>Wata stores scans, names, signatures, Archive Export credits, and PDFs on this iPhone or iPad. There is no cloud backup in this version.</p>
-  <h2>How to archive a document</h2>
-  <ol>
-    <li>Tap Scan or Import, then Confirm pages.</li>
-    <li>Crop, sort, name, and sign in the editor.</li>
-    <li>Fill archive details. Preview is free.</li>
-    <li>Export the PDF. That uses 1 Archive Export Credit.</li>
-  </ol>
-  <h2>Permissions</h2>
-  <p>Camera, Photos, and Microphone are requested only after you tap Scan, Import, Save preview to Photos, or a voice button.</p>
-  <h2>Credits</h2>
-  <p>Archive Export credits are stored on this device. They cannot be restored after you delete the app or tap Clear All Local Data / Delete Account.</p>
-  <h2>Contact</h2>
-  <p>For product questions, use the Support link listed with Wata on the App Store listing.</p>
+  <header>
+    <div class="kicker">Wata · on this device</div>
+    <h1>Support<span>.</span></h1>
+    <div class="hero" role="img" aria-label="Desk with documents"></div>
+  </header>
+  <main>
+    <p>Operator: Wata. Last updated: 4 September 2026.</p>
+    <h2>Archive a document</h2>
+    <ol>
+      <li>Tap Scan or Import, then Confirm pages.</li>
+      <li>Crop, sort, name, and sign.</li>
+      <li>Preview is free. Standard export uses 1 Petal. Print uses 2 Petals.</li>
+    </ol>
+    <h2>Permissions</h2>
+    <p>iOS asks for Camera, Photos, or Microphone only after you tap Scan, Import, Save preview to Photos, or a voice button.</p>
+    <h2>Credits</h2>
+    <p>Petals stay on this device. They cannot be restored after you delete the app or Delete Account.</p>
+    <p><a href="https://wataapps.github.io/wata-legal/privacy.html">Privacy Policy</a> · <a href="https://wataapps.github.io/wata-legal/terms.html">Terms of Use</a></p>
+  </main>
 </body>
 </html>

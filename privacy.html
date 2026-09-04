@@ -5,39 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wata Privacy Policy</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 80px; line-height: 1.55; color: #101820; }
-    h1 { font-size: 2rem; } h2 { margin-top: 1.6em; } p, li { color: #2a3440; }
-    a { color: #1F6F73; }
+    :root { --navy:#132033; --ink:#101820; --paper:#F4F7FB; --thread:#D63A6A; --ledger:#1F6F73; --mist:#5c6b7a; --platen:#D5DEE8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); line-height: 1.55; }
+    header { background: linear-gradient(180deg, #1A2738, #0B1018); color: #F4F7FB; padding: 36px 24px 28px; }
+    header .kicker { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #9AABBD; }
+    header h1 { margin: 8px 0 0; font-size: 2rem; letter-spacing: -0.03em; }
+    header h1 span { color: var(--thread); }
+    .hero {
+      margin: 18px 0 0;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 140px;
+      background: #132033 url("https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1400&q=70") center/cover;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 28px 20px 80px; }
+    h2 { font-size: 1.15rem; margin-top: 1.6em; }
+    p, li { color: var(--mist); }
+    ul { padding-left: 1.2em; }
+    a { color: var(--ledger); }
+    .card { background: #fff; border: 1px solid rgba(19,32,51,0.12); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Operator: Wata. Last updated: 3 September 2026.</p>
-  <p>Wata is a local document archive app. Scans, photos, names, notes, signatures, Archive Export credits, and PDFs stay on your device. Wata does not create a cloud account and does not sell personal information.</p>
-  <h2>Data stored on your device</h2>
-  <ul>
-    <li>Document pages you scan or import, including crop, page order, and signature images.</li>
-    <li>Archive titles, types, expiry dates, and notes you type or dictate.</li>
-    <li>Exported PDF files in Wata’s private folder.</li>
-    <li>Purchase records and remaining Archive Export credits. Credits are consumable and stored only on this device.</li>
-    <li>A local login flag so Wata can return to your last draft after you tap Log In.</li>
-    <li>Light preferences such as onboarding complete, last draft, capture mode, and appearance.</li>
-  </ul>
-  <h2>Permissions</h2>
-  <ul>
-    <li><strong>Camera</strong> — used when you tap Scan, to capture a document page for a local archive PDF.</li>
-    <li><strong>Photos</strong> — used when you tap Import, to copy pages into Wata. Album originals are not edited. Also used when you tap Save preview to Photos. The PDF stays in Wata.</li>
-    <li><strong>Microphone</strong> — used when you tap the voice button on a file name, notes, or search field. The keyboard always stays available.</li>
-    <li><strong>Speech recognition</strong> — used only with that voice button, to turn speech into text on this device.</li>
-    <li><strong>Tracking</strong> — iOS may ask for App Tracking Transparency after you are inside the app. You can decline.</li>
-    <li><strong>Notifications</strong> — used to tell you when a local PDF is ready. You can decline.</li>
-  </ul>
-  <p>Wata does not request Camera, Photos, or Microphone on the splash or login screen.</p>
-  <h2>Purchases</h2>
-  <p>Archive Export credits are Apple In-App Purchases. Apple processes payment. Credits live on this device and cannot be restored after you delete the app, Delete Account, or Clear All Local Data. Log Out keeps credits on the device.</p>
-  <h2>Log Out and Delete Account</h2>
-  <p>Log Out ends the local session and keeps archives, media, and credits on the device. Delete Account and Clear All Local Data erase projects, media, Demo history, preferences, and remaining credits on this device after confirmation.</p>
-  <h2>Contact</h2>
-  <p>Questions about this policy: <a href="https://wataapps.github.io/wata-legal/support.html">Wata Support</a>.</p>
+  <header>
+    <div class="kicker">Wata · on this device</div>
+    <h1>Privacy Policy<span>.</span></h1>
+    <div class="hero" role="img" aria-label="Document pages on a desk"></div>
+  </header>
+  <main>
+    <p>Operator: Wata. Last updated: 4 September 2026.</p>
+    <div class="card">
+      <p>Wata archives scans, names, signatures, Petals, and PDFs on your iPhone. There is no cloud account. Wata does not sell personal information.</p>
+    </div>
+    <h2>Data on this device</h2>
+    <ul>
+      <li>Pages you scan or import, plus crop, order, and signature images.</li>
+      <li>Titles, types, expiry dates, and notes.</li>
+      <li>Exported PDFs in Wata’s private folder.</li>
+      <li>Purchase records and remaining Petals. Credits are consumable and stay on this device.</li>
+      <li>A local Enter flag so Wata can return to your last draft.</li>
+    </ul>
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong> — when you tap Scan. iOS shows the system alert.</li>
+      <li><strong>Photos</strong> — when you tap Import or Save preview to Photos. Album originals are not edited.</li>
+      <li><strong>Microphone</strong> — when you tap a voice button. You can always type instead.</li>
+    </ul>
+    <p>Camera, Photos, and Microphone are not requested on the splash or Enter screen.</p>
+    <h2>Purchases</h2>
+    <p>Petals are Apple In-App Purchases. A Standard PDF export uses 1 Petal. Print quality uses 2 Petals. Preview is free. Credits cannot be restored after you delete the app or Delete Account. Log Out keeps credits on the device. There is no Restore Purchases control.</p>
+    <h2>Log Out and Delete Account</h2>
+    <p>Log Out ends the local session and keeps files and credits. Delete Account erases projects, media, Demo history, preferences, and remaining Petals after confirmation.</p>
+    <p><a href="https://wataapps.github.io/wata-legal/terms.html">Terms of Use</a> · <a href="https://wataapps.github.io/wata-legal/support.html">Support</a></p>
+  </main>
 </body>
 </html>

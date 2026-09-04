@@ -5,25 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wata Terms of Use</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 80px; line-height: 1.55; color: #101820; }
-    h1 { font-size: 2rem; } h2 { margin-top: 1.6em; } p, li { color: #2a3440; }
-    a { color: #1F6F73; }
+    :root { --navy:#132033; --ink:#101820; --paper:#F4F7FB; --thread:#D63A6A; --ledger:#1F6F73; --mist:#5c6b7a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); line-height: 1.55; }
+    header { background: linear-gradient(180deg, #1A2738, #0B1018); color: #F4F7FB; padding: 36px 24px 28px; }
+    header .kicker { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #9AABBD; }
+    header h1 { margin: 8px 0 0; font-size: 2rem; letter-spacing: -0.03em; }
+    header h1 span { color: var(--thread); }
+    .hero {
+      margin: 18px 0 0;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 140px;
+      background: #132033 url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1400&q=70") center/cover;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 28px 20px 80px; }
+    h2 { font-size: 1.15rem; margin-top: 1.6em; }
+    p, li { color: var(--mist); }
+    a { color: var(--ledger); }
+    .card { background: #fff; border: 1px solid rgba(19,32,51,0.12); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
   </style>
 </head>
 <body>
-  <h1>Terms of Use</h1>
-  <p>Operator: Wata. Last updated: 3 September 2026.</p>
-  <p>By using Wata you agree to these terms. Wata lets you scan or import document pages, correct them, and export a local PDF on this device.</p>
-  <h2>Your content</h2>
-  <p>You may only archive documents you have the right to keep. Wata does not review your files. You are responsible for the pages you scan, import, name, sign, and export.</p>
-  <h2>Local processing</h2>
-  <p>Capture, crop, naming, signing, credit deduction, and PDF export happen on this device. This version does not offer external backup.</p>
-  <h2>Credits</h2>
-  <p>Each confirmed PDF export uses the credits shown in the app before you confirm. Preview is free and does not mark an archive complete. Credits are consumable In-App Purchases stored on this device. Unused credits are permanently lost if you Delete Account, Clear All Local Data, or remove the app. Log Out does not delete credits.</p>
-  <h2>Account on this device</h2>
-  <p>Log In is a one-tap local session. There is no Apple ID sign-in, email, or password. You must agree to the Privacy Policy and these Terms before Log In. Log Out returns you to login and keeps your files. Delete Account erases local data after confirmation.</p>
-  <h2>Changes</h2>
-  <p>Wata may update these terms. The date at the top shows the current version.</p>
-  <p><a href="https://wataapps.github.io/wata-legal/privacy.html">Privacy Policy</a> · <a href="https://wataapps.github.io/wata-legal/support.html">Support</a></p>
+  <header>
+    <div class="kicker">Wata · on this device</div>
+    <h1>Terms of Use<span>.</span></h1>
+    <div class="hero" role="img" aria-label="Signed contract pages"></div>
+  </header>
+  <main>
+    <p>Operator: Wata. Last updated: 4 September 2026.</p>
+    <div class="card">
+      <p>By tapping Enter you agree to these terms. Wata lets you scan or import pages, correct them, and export a local PDF.</p>
+    </div>
+    <h2>Your content</h2>
+    <p>Only archive documents you have the right to keep. You are responsible for pages you scan, import, name, sign, and export.</p>
+    <h2>Local processing</h2>
+    <p>Capture, crop, naming, signing, Petal deduction, and PDF export happen on this device. This version has no cloud backup.</p>
+    <h2>Credits</h2>
+    <p>A Standard PDF export uses 1 Petal. Print quality uses 2 Petals. Preview is free. Petals are consumable In-App Purchases stored on this device. Unused Petals are lost if you Delete Account or remove the app. Log Out does not delete Petals. There is no Restore Purchases control.</p>
+    <h2>Account on this device</h2>
+    <p>Enter is a one-tap local session. No Apple ID, email, or password. Agree to the Privacy Policy and these Terms before Enter. Log Out returns you to Enter and keeps your files. Delete Account erases local data after confirmation.</p>
+    <p><a href="https://wataapps.github.io/wata-legal/privacy.html">Privacy Policy</a> · <a href="https://wataapps.github.io/wata-legal/support.html">Support</a></p>
+  </main>
 </body>
 </html>
